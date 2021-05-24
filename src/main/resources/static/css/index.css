@@ -90,16 +90,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #ad0b00
 }
 
-footer {
-    color: white;
-    background-color: navy;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0 , 0, 0, 0.3)),
-    url("../img/waterbackground.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-}
-
 footer a {
     color: white;
     text-decoration: underline;
