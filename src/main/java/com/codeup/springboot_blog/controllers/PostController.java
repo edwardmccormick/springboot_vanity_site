@@ -87,7 +87,7 @@ public class PostController {
     User author = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
     post.setAuthor(author);
     postDao.save(post);
-    emailService.prepareAndSend(post, "Your post was successfully posted!", "You can view it at http://localhost:8080/posts/" + post.getId());
+    emailService.prepareAndSend(post.getAuthor().getEmail(), "Your post was successfully posted!", "You can view it at http://localhost:8080/posts/" + post.getId());
     model.addAttribute("alert", "<div class=\"alert alert-success\" role=\"alert\">\n" +
             "  The post was added successfully.</div>");
     return "redirect:/posts/" + post.getId();

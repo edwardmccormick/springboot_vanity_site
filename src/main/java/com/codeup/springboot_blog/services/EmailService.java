@@ -14,13 +14,13 @@ public class EmailService {
     @Autowired
     public JavaMailSender emailSender;
 
-    @Value("${spring.mail.from}")
+    @Value("no-reply@tedmccormick.dev")
     private String from;
 
-    public void prepareAndSend(Post post, String subject, String body) {
+    public void prepareAndSend(String sender, String subject, String body) {
         SimpleMailMessage msg = new SimpleMailMessage();
         msg.setFrom(from);
-        msg.setTo(post.getAuthor().getEmail());
+        msg.setTo(sender);
         msg.setSubject(subject);
         msg.setText(body);
 
