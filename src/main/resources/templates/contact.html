@@ -14,8 +14,9 @@
         <h4 class="text-right text-white">George W. Romney,<br> September 13, 1963</h4>
     </div>
 </div>
+<div class="container">
 <h3>Social Media</h3>
-<uL><div class="container col-12 row justify-content-between m-1 p-1 text-center">
+<uL><div class="container col-12 d-flex justify-content-between m-1 p-1 text-center">
     <li><a href="https://www.linkedin.com/in/ted-mccormick/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
     <li><a href="https://github.com/edwardmccormick"><i class="fab fa-github-square"></i>Github</a></li>
     <li><a href="https://twitter.com/ted_codes"><i class="fab fa-twitter-square"></i>Twitter </a></li>
@@ -26,7 +27,7 @@
 
 <h1>Contact Me:</h1>
 <!--    <form method="POST" action="https://request-inspector.glitch.me/">-->
-<form method="post" action="https://www.elformo.com/forms/e5878aa8-9305-4e48-9dff-aad785d47572">
+<form th:method="post" th:action="${'/contact'}">
     <div class="row m-0 p-0">
         <div class="form-group col-12 col-lg-4">
             <label for="email">Email address</label>
@@ -58,7 +59,9 @@
         </div>
     </div>
     <button type="submit" class="btn btn-secondary btn-lg float-right mx-3 my-0"><span>Contact/Submit</span></button>
+<!--    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">-->
 </form>
+</div>
 <footer th:replace="partials.html::footer"></footer>
 </body>
 </html>

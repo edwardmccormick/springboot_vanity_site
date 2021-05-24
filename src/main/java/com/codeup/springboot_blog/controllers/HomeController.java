@@ -30,7 +30,7 @@ public class HomeController {
 
     @PostMapping("/contact")
     public String contactSend(@RequestParam(name = "email") String email, @RequestParam(name = "name") String name, @RequestParam(name = "source") String source, @RequestParam(name = "bodytext") String body) {
-        emailService.prepareAndSend("ted.mccormick@gmail.com","New message from " + name, "Hey Ted, /nYou just received a new message on the contact-me form at tedmccormick.dev. The user's email was entered as: " + email + ". They mentioned the source of their visit was: " + source + ". Their message was: /n /n /n'" + body);
+        emailService.prepareAndSend("ted.mccormick@gmail.com","New message from " + name, "Hey Ted, \n You just received a new message on the contact-me form at tedmccormick.dev. The user's email was entered as: " + email + ". They mentioned the source of their visit was: " + source + ". Their message was: \n \n \n'" + body +"'");
 
 
     return "thank-you";}
