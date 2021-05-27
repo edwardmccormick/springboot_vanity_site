@@ -7,8 +7,11 @@
 
 
 <body>
+<div id="wrap">
+    <div id="main">
 <link rel="stylesheet" href="/css/thankyou.css">
 <nav th:replace="partials.html :: navbar"></nav>
+
 
 <div class="jumbotron jumbotron-fluid p-0 bg-dark branson">
     <div class="container quote">
@@ -17,9 +20,10 @@
         <h4 class="text-right text-white">Richard Branson</h4>
     </div>
 </div>
+
 <h1>Thank you for getting in touch with me - I'll be back with you as soon as possible. In the meantime feel free to have a look around.</h1><br>
 <h3>Social Media</h3>
-<uL><div class="container col-12 row justify-content-between m-1 p-1 text-center">
+<uL><div class="container col-12 d-flex justify-content-between m-1 p-1 text-center">
     <li><a href="https://www.linkedin.com/in/ted-mccormick/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
     <li><a href="https://github.com/edwardmccormick"><i class="fab fa-github-square"></i>Github</a></li>
     <li><a href="https://twitter.com/ted_codes"><i class="fab fa-twitter-square"></i>Twitter </a></li>
@@ -27,6 +31,8 @@
     <li><a href="http://tedmccormick.familyds.com/"><i class="fas fa-laptop-code">Vanity Site/Interactive Portfolio</i></a></li>
 </div>
 </uL>
+    </div>
+</div>
 <footer th:replace="partials.html::footer"></footer>
 </body>
 </html>

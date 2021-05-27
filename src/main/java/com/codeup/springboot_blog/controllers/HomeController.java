@@ -33,6 +33,12 @@ public class HomeController {
         emailService.prepareAndSend("ted.mccormick@gmail.com","New message from " + name, "Hey Ted, \n You just received a new message on the contact-me form at tedmccormick.dev. The user's email was entered as: " + email + ". They mentioned the source of their visit was: " + source + ". Their message was: \n \n \n'" + body +"'");
 
 
-    return "thank-you";}
-}
+    return "thank-you";
+    }
 
+    @GetMapping("/test")
+    public String renderTest() {
+        return "thank-you";
+    }
+
+}

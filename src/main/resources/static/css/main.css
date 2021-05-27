@@ -42,6 +42,16 @@ body {
     border-color: var(--taupe);
 }
 
+nav {
+    /*color: white;*/
+    background-color: skyblue;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255 , 255, 255, 0.3)),
+    url("../img/sky.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
 footer {
     color: white;
     background-color: navy;
