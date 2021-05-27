@@ -22,3 +22,28 @@ ul {
 .fa-laptop-code {
     color: black
 }
+
+.fa-twitter-square {
+    color: #1da1f2;
+}
+
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow:auto;
+    /*padding-bottom:160px; !* this needs to be bigger than footer height*!*/
+}
+
+.footer {
+    position: relative;
+    margin-top: -262px; /* negative value of footer height */
+    height: 160px;
+    clear:both;
+    padding-top:20px;
+}
