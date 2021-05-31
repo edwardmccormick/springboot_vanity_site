@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/contact.css">
 
 <body>
+<div id="wrap">
+    <div id="main">
 <nav th:replace="partials.html :: navbar"></nav>
 <!--<div class="jumbotron jumbotron-fluid p-0 bg-dark GWR">-->
 <!--    <div class="container quote">-->
@@ -58,9 +60,11 @@
             <textarea class="form-control" id="bodytext" rows="5" placeholder="Body of message here." name="bodytext"></textarea>
         </div>
     </div>
-    <button type="submit" class="btn btn-secondary btn-lg float-right mx-3 my-0"><span>Contact/Submit</span></button>
+    <button type="submit" class="btn btn-secondary btn float-right mx-3 my-0"><span>Contact/Submit</span></button>
 <!--    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">-->
 </form>
+</div>
+    </div>
 </div>
 <footer th:replace="partials.html::footer"></footer>
 </body>

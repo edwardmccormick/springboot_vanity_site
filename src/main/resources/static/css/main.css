@@ -21,13 +21,6 @@ body {
     background-color: var(--white);
 }
 
-#footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-}
-
 .btn {
     background-color: var(--taupe);
     border-color: var(--white);
@@ -66,4 +59,63 @@ footer {
     border-radius: 50%;
     height: 75px;
     width: auto;
+}
+
+.fa-linkedin {
+    color: #0a66c2
+}
+
+.fa-github-square {
+    color: black;
+}
+
+.fa-laptop-code {
+    color: black;
+}
+
+.fa-envelope-open {
+    color: #c5221e;
+}
+
+.fa-lock {
+    color: #505061;
+}
+
+.fa-file-pdf {
+    color: #ad0b00
+}
+
+.fa-laptop-code {
+    color: black
+}
+
+.fa-twitter-square {
+    color: #1da1f2;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: calc(100% - 160px);
+}
+
+#main {
+    overflow:auto;
+    /*padding-bottom:160px; !* this needs to be bigger than footer height*!*/
+}
+
+footer {
+    position: relative;
+    margin-top: -162px; /* negative value of footer height */
+    height: 162px;
+    clear:both;
+    /*padding-top:20px;*/
 }
