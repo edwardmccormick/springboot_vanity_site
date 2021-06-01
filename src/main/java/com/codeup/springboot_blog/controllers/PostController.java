@@ -140,5 +140,10 @@ public String editSaveIndividualPost(@ModelAttribute Post post, @PathVariable lo
         return "posts/index";
 }
 
+    @GetMapping("/blog/about")
+    public String userPosts(Model model) {
+
+    return "posts/about";
+    }
 
 }
