@@ -21,6 +21,10 @@ body {
     background-color: var(--white);
 }
 
+.container {
+    border-bottom: 2rem;
+}
+
 .btn {
     background-color: var(--taupe);
     border-color: var(--white);
