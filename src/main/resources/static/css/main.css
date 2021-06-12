@@ -118,6 +118,11 @@ html, body {
     /*padding-bottom:160px; !* this needs to be bigger than footer height*!*/
 }
 
+#devicons {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0 , 0, 0, 0.4));
+    border-radius: 10px;
+}
+
 footer {
     position: relative;
     margin-top: -162px; /* negative value of footer height */
