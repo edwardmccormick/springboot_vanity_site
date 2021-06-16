@@ -36,9 +36,9 @@ public class HomeController {
     return "thank-you";
     }
 
-//    @GetMapping("/test")
-//    public String renderTest() {
-//        return "thank-you";
-//    }
+    @GetMapping("/test")
+    public String renderTest() {
+        return "thank-you";
+    }
 
 }
